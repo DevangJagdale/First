@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="sample.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <img id="pro" src="img/photo-1572177812156-58036aae439c.jpg" alt="">
+  <style>
+    .logo{
+      color: black;
+    }
+    body #pro{
+      width: 1519px;
+      height: 800px;
+    }
+    @media screen and (max-width: 1024px){
+      body #pro{
+        width: 500px;
+      height: 400px;
+      }
+    }
+  </style>
+    <nav>
+      <div class="logo">
+        <h4>Projects</h4>
+      </div>
+      <ul class='nav-links'>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a id="current" class="dropbtn" href="project.html">Project</a>
+            <div class="dropdown-content">
+              <a href="#jump">Macine Learning</a>
+              <a href="#jump1">Web development</a>
+              <a href="#jump2">Data Science</a>
+              <a href="#jump3">Mini projects</a>
+          </div>
+        </div>
+        </li>
+        <li>
+          <a href="mailto:devangj9689@gmail.com">Contact</a>
+        </li>
+      </ul>
+      <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+    </nav>
+
+
+
+    <div id="jump" class="jumbotron">
+      <h4>Macine Learning</h4>
+      <div class="wrapper2">
+        <a href="www.google.com"></a>
+        <img id="first2" src="img/high-angle-photo-of-robot-2599244.jpg" alt="">
+        <div class="overlay2">
+          <div class="content2">
+            <a href="www.google.com">Scikit<br>Learn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="jump1" class="jumbotron">
+      <h4>Web development</h4>
+      <div class="wrapper">
+        <a href="www.google.com"></a>
+        <img id="first" src="img/pexels-photo-1061142.jpeg" alt="">
+        <div class="overlay">
+          <div class="content">
+            <a href="www.google.com">Portfolio<br>Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper1">
+        <a href=""><img id="first1" src="img/photo-1562577309-4932fdd64cd1.jpg" alt=""></a>
+        <div class="overlay1">
+          <div class="content1">
+            <a href="http://www.youtube.com">Blog<br>Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="jump2" class="jumbotron">
+      <h4>Data Science</h4>
+      <div class="wrapper2">
+        <a href=""><img id="first2" src="img/carlos-muza-hpjSkU2UYSU-unsplash.jpg" alt=""></a>
+        <div class="overlay2">
+          <div class="content2">
+            <a href="http://www.youtube.com">Data<br>Analysis</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="jump3" class="jumbotron">
+      <h4>Mini Projects</h4>
+      <div class="wrapper">
+        <a href="www.google.com"></a>
+        <img id="first" src="img/photo-1563559983710-47af8035e4be.jpg" alt="">
+        <div class="overlay">
+          <div class="content">
+            <a href="www.google.com">Tic-Tac-Toe</a>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper1">
+        <a href=""><img id="first1" src="img/twitter-jankolario-Sc5HUu4XzTk-unsplash.jpg" alt=""></a>
+        <div class="overlay1">
+          <div class="content1">
+            <a href="http://www.youtube.com">ATM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style media="screen">
+    #jump1{
+      background-color: white;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      height: 500px;
+      margin-top: 0px;
+    }
+    .wrapper{
+      width: 300px;
+      margin-top: 200px;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+    }
+    #first{
+      display: block;
+      height: 250px;
+      width: 300px;
+    }
+    .content{
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    .content a{
+      text-decoration: none;
+      color: white;
+    }
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 250px;
+      width: 300px;
+      opacity: 0;
+      transition: 0.5s ease;
+      background: rgba(255, 119, 0, 0.6);
+    }
+    .wrapper:hover .overlay{
+      opacity: 1;
+    }
+    .wrapper1{
+      width: 300px;
+      margin-top: 200px;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+    }
+    #first1{
+      display: block;
+      height: 250px;
+      width: 300px;
+    }
+    .content1{
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    .content1 a{
+      text-decoration: none;
+      color: white;
+    }
+    .overlay1{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 250px;
+      width: 300px;
+      opacity: 0;
+      transition: 0.5s ease;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .wrapper1:hover .overlay1{
+      opacity: 1;
+    }
+    .wrapper2{
+      width: 300px;
+      margin-top: 200px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+    }
+    #first2{
+      display: block;
+      height: 250px;
+      width: 300px;
+    }
+    .content2{
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    .content2 a{
+      text-decoration: none;
+      color: white;
+    }
+    .overlay2{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 250px;
+      width: 300px;
+      opacity: 0;
+      transition: 0.5s ease;
+      background: rgba(25, 19, 0, 0.6);
+    }
+    .wrapper2:hover .overlay2{
+      opacity: 1;
+    }
+    #jump2{
+      background-color: white;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      height: 500px;
+      margin-top: 0px;
+    }
+    #jump3{
+      background-color: white;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      height: 500px;
+      margin-top: 0px;
+    }
+    #jump3 .overlay{
+        background: rgba(25, 119, 0, 0.6);
+    }
+    #jump3 .overlay1{
+      background: rgba(0, 0, 119, 0.6);
+    }
+    @media screen and (max-width: 1024px){
+      #jump1{
+        height: 800px;
+      }
+      #jump3{
+        height: 800px;
+      }
+      .wrapper1{
+        width: 300px;
+        margin-top: 550px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+      .wrapper{
+        width: 300px;
+        margin-top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+      .wrapper2{
+        width: 300px;
+        margin-top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+    }
+    </style>
+
+
+    <div id="jum1h" class="jumbotron">
+      <h1>Made with Love and Passion</h1>
+      <p>By Devang Jagdale</p>
+      <a id="mail" href="http://www.twitter.com/Devang80592431">
+        <img src="img/twitter-logo-A84FE9258E-seeklogo.com.png" alt="">
+      </a>
+      <a id="mail" href="http://www.instagram.com/devangjagdale">
+        <img src="img/instagram-square-color.png" alt="">
+      </a>
+      <a id="mail" href="http://www.linkedin.com/in/devang-jagdale-b19965189">
+        <img src="img/1200px-Linkedin.svg.png" alt="">
+      </a>
+      <a id="mail" href="mailto:devangj9689@gmail.com">
+        <img src="img/1280px-New_Logo_Gmail.svg.png">
+      </a>
+      <a id="mail" href="http://github.com/DevangJagdale">
+        <img src="img/download.png">
+      </a>
+      <h5>© 2020 Devang Jagdale All Rights Reserved</h5>
+  </div>
+    <script src="sample.js">
+
+    </script>
+  </body>
+</html>
